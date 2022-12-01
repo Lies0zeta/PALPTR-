@@ -1,7 +1,4 @@
 # PALPTR
-Pool-Based Active Learning with Proper Topological Regions
-
-# PALPTR
 
 This repository contains the implementation of the paper:
 
