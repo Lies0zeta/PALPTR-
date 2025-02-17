@@ -13,5 +13,60 @@ Machine learning techniques often require large labeled training sets to attain 
 
 
 
-## Code
-Coming soon!
+## Usage
+
+```python
+from ptr import PTRSelector
+
+# Initialize the selector
+selector = PTRSelector()
+
+# Get initial points to label
+points_to_label = selector.select_points(X)
+```
+
+## Datasets
+
+We evaluated our method on several benchmark datasets:
+
+- PROTEIN 
+- BANKNOTE
+- COIL-20
+- ISOLET
+- PEN-DIGITS
+- NURSERY
+
+## Results
+
+Our method demonstrates superior performance compared to:
+- Random selection
+- K-means clustering
+- Core-set approach
+- Uncertainty sampling
+
+## Citation
+
+If you use this code in your research, please cite our paper:
+
+```bibtex
+@inproceedings{hadjadj2024efficient,
+    title={Efficient Initial Data Selection and Labeling for Multi-Class Classification Using Topological Analysis},
+    author={Hadjadj, Lies and Devijver, Emilie and Molinier, R{\'e}mi and Amini, Massih-Reza},
+    booktitle={ECAI 2024: 26th European Conference on Artificial Intelligence},
+    series={Frontiers in Artificial Intelligence and Applications},
+    volume={392},
+    pages={2677--2684},
+    year={2024},
+    doi={10.3233/FAIA240800},
+    publisher={IOS Press}
+}
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or issues, please open an issue or contact:
+- Lies Hadjadj (lies.hadjadj@univ-grenoble-alpes.fr)
